@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- 搜索蓝牙设备按钮 -->
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Bluetooth Devices" />
+
+    <!-- 输入框 -->
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter message"
+        android:layout_marginTop="16dp" />
+
+    <!-- 发送按钮 -->
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_marginTop="8dp" />
+
+    <!-- 接收框 -->
+    <TextView
+        android:id="@+id/tv_received"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Received messages will appear here"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:background="#f0f0f0"
+        android:minHeight="100dp" />
+
+    <!-- 断开蓝牙设备按钮 -->
+    <Button
+        android:id="@+id/btn_disconnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Disconnected" />
+
+</LinearLayout>
